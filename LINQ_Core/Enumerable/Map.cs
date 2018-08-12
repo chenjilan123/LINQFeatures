@@ -24,15 +24,31 @@ namespace LINQ_Core.Enumerable
 
     public class Map
     {
-        public void MapSequence()
+        public void FilterSequence()
         {
-            var sequence = GeneratedSequence();
-            sequence = sequence.Where(s => s.Length < 3);
+            //var sequence = GeneratedSequence();
+            //sequence = sequence.Where(s => s.Length < 3);
+            //foreach (var item in sequence)
+            //    Console.WriteLine(item);
 
+            var sequence = GeneratedIntSequence().Take(1000);
+            sequence = sequence.Where(i => i % 3 == 0);
             foreach (var item in sequence)
             {
                 Console.WriteLine(item);
             }
+        }
+
+        /// <summary>
+        /// Use select to map things to other type
+        /// </summary>
+        public void MapSequence()
+        {
+            var sequence = GeneratedIntSequence().Select(n => n.ToString());
+            sequence = sequence.Where(s => s.Length < 3);
+            foreach (var item in sequence)
+                Console.WriteLine(item);
+
         }
 
 
@@ -42,6 +58,12 @@ namespace LINQ_Core.Enumerable
             int i = 0;
             while (i++ <= int.MaxValue)
                 yield return i.ToString();
+        }
+        private IEnumerable<int> GeneratedIntSequence()
+        {
+            int i = 0;
+            while (i++ <= int.MaxValue)
+                yield return i;
         }
     }
 }
