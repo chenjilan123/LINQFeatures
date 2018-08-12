@@ -15,7 +15,7 @@ namespace LINQ_Core
             //lazy.GenerateEveryWeekdayTheSameAsTodayInTheNextYear();
 
             var map = new Map();
-            map.FilterSequence();
+            //map.FilterSequence();
             map.MapSequence();
 
         }
