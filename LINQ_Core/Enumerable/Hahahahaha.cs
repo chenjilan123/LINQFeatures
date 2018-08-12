@@ -13,7 +13,7 @@ namespace LINQ_Core.Enumerable
             //"hehehehe"
         }
 
-        public void Hahahahaha()
+        public void Hahahahahaafa()
         {
 
         }
