@@ -12,5 +12,10 @@ namespace LINQ_Core.Enumerable
         {
             //"hehehehe"
         }
+
+        public void Hahahahaha()
+        {
+
+        }
     }
 }
