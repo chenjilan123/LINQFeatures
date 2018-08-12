@@ -11,8 +11,11 @@ namespace LINQ_Core
     {
         static void Main(string[] args)
         {
-            LazyLoading lazy = new LazyLoading();
-            lazy.GenerateEveryWeekdayTheSameAsTodayInTheNextYear();
+            //LazyLoading lazy = new LazyLoading();
+            //lazy.GenerateEveryWeekdayTheSameAsTodayInTheNextYear();
+
+            var map = new Map();
+            map.MapSequence();
 
         }
     }

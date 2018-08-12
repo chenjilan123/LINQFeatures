@@ -355,6 +355,7 @@
       <DependentUpon>AdventureWork.tt</DependentUpon>
     </Compile>
     <Compile Include="Enumerable\LazyLoading.cs" />
+    <Compile Include="Enumerable\Map.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
