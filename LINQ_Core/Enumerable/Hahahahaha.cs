@@ -15,7 +15,7 @@ namespace LINQ_Core.Enumerable
 
         public void Hahahahahaafa()
         {
-            //Gogogogogogogogogogo
+
         }
     }
 }
