@@ -8,5 +8,9 @@ namespace LINQ_Core.Enumerable
 {
     class Hahahahaha
     {
+        public void Vd()
+        {
+            //"hehehehe"
+        }
     }
 }
