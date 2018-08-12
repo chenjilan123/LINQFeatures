@@ -54,6 +54,7 @@ namespace LINQ_Core.Enumerable
 
     public class Map
     {
+        private const int _takeNumber = 100;
         public void FilterSequence()
         {
             //var sequence = GeneratedSequence();
@@ -61,7 +62,7 @@ namespace LINQ_Core.Enumerable
             //foreach (var item in sequence)
             //    Console.WriteLine(item);
 
-            var sequence = GeneratedIntSequence().Take(1000);
+            var sequence = GeneratedIntSequence().Take(_takeNumber);
             sequence = sequence.Where(i => i % 3 == 0);
             foreach (var item in sequence)
             {
@@ -74,7 +75,7 @@ namespace LINQ_Core.Enumerable
         /// </summary>
         public void MapSequence()
         {
-            var sequence = GeneratedIntSequence().Take(1000).Where(n => n % 5 == 0).Select((n, Index) =>
+            var sequence = GeneratedIntSequence().Take(_takeNumber).Where(n => n % 5 == 0).Select((n, Index) =>
                 new { Index, formattedResult = n.ToString().PadLeft(20) });
             foreach (var item in sequence)
                 //Console.WriteLine($"Index: {item.Index}, Result: {item.formattedResult}");
