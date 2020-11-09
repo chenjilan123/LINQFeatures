@@ -19,7 +19,7 @@ namespace LINQ_Core.Enumerable
                 Console.WriteLine(item);
             }
         }
-        public void GenerateEveryWeekdayTheSameAsTodayInTheNextYear()
+        public void GenerateEveryWeekdayTheSameAsTodayToTheNextYear()
         {
             var today = DateTime.Now;
             var sequence = GeneratedVariable(() =>
